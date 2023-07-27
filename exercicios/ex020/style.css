@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/*
+    em html = id em css = #
+    em html = class em css = .
+*/
+
+/* só pode colocar um id no documento, e a classe pode repetir, Ex: id=teste(só pode ter um elemento de id teste no documento todo), class=basico, pode estar em varios elementos*/
+
+/* id prevalece a class, Ex: #teste{color: black}, .teste{color: red}  a cor ficará black*/
+
+body{
+    background-color: rgb(237, 177, 177);
+    font-family:Arial, Helvetica, sans-serif;
+}
+h1{
+    color:  rgb(174, 77, 77);
+}
+h1#principal{ /*ou
+#principal{}*/
+    text-align: center;
+    background-color: green;
+    color: white;
+}
+h2{
+    color:  rgb(207, 124, 124);
+}
+
+.basico{
+    color: green;
+}
+
+.intermediario{
+    color:blue;
+}
+
+.avancado{
+    color: yellow;
+}
+
+.destaque{
+    background-color: aquamarine;
+}

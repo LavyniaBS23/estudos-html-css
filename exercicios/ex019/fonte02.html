@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts externas</title>
+    <style>
+        @font-face {
+            font-family: 'Ghastly';
+            src: url('fonts/Ghastly Panic.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            /* dois formatos diferentes
+            src: url('fonts/Ghastly Panic.ttf') format('truetype'), url('fonts/Ghastly Panic.otf') format('opentype');*/
+            
+            /*tipos de format()
+            -opentype - otf
+            -trueType - ttf
+            -embedded-opentype
+            -trueType-aat(Apple avanced typography)
+            -svg
+            */
+        }
+       body{
+            font-family: Arial, Helvetica, sans-serif;
+       }
+       h1{
+            font-family:'Ghastly', Times, serif;/*msm nome do de cima*/
+            font-weight: normal;
+            font-size: 3em;
+       }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia ipsa hic sit magni perferendis dicta repudiandae, nam rerum laboriosam, ab quae laborum facilis, eligendi labore. Ratione hic nam vel omnis.</p>
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe quos deserunt animi aperiam corporis vitae amet! Fuga tenetur facere, provident maxime porro ea, ipsum, fugiat cum corporis nemo dolore in.</p>
+</body>
+</html>
