@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 400px;
+        }
+        td{
+            border: 1px solid black;
+            padding: 10px;
+            width: 300px;
+            text-align: center;
+        }
+        .destaque{
+            background-color: aqua;
+        }
+        col.cnome{
+            background-color: blue;
+        }
+        col.cgrupo{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="2">
+            <col class="cprofissao">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>F</td>
+            <td>23</td>
+            <td>Programadora</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>DJ</td>
+        </tr>
+        <tr>
+            <td>Fernando</td>
+            <td>M</td>
+            <td>25</td>
+            <td>Chefe</td>
+        </tr>
+        <tr>
+            <td>Maicom</td>
+            <td>M</td>
+            <td>35</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr class="destaque">
+            <td>Marlene</td>
+            <td>F</td>
+            <td>50</td>
+            <td>Farmaceutica</td>
+        </tr>
+        <tr>
+            <td>Mario</td>
+            <td>M</td>
+            <td>45</td>
+            <td>Engenheiro</td>
+        </tr>
+    </table>
+</body>
+</html>

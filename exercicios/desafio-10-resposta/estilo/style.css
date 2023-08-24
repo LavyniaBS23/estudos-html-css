@@ -188,5 +188,5 @@ footer > p > a{
 
 footer a:hover{
     text-decoration: underline;
-    color: var(--cor1);
+    color: var(--cor0);
 }
