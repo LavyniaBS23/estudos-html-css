@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body>
+    <header onresize="mudouTamanho()">
+        <h1>Meu Site</h1>
+        <span onclick="clickMenu()" id="burguer" class="material-symbols-outlined">
+            menu
+        </span>
+        <menu id="itens">
+            <ul>
+                <li><a href="">Opção 1</a></li>
+                <li><a href="">Opção 2</a></li>
+                <li><a href="">Opção 3</a></li>
+                <li><a href="">Opção 4</a></li>
+                <li><a href="">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et placeat sequi eligendi beatae. Impedit omnis, numquam ad accusamus nulla praesentium, consequatur aperiam nobis odio dolorum officia, neque aliquam eius tempora.
+            </p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur expedita ex distinctio exercitationem repellendus fugit accusantium mollitia repellat ipsa nobis necessitatibus rerum pariatur beatae modi dolores optio at sequi sint sapiente autem, doloremque alias tempora? Fugit tempore perspiciatis libero, eveniet quae velit dolore rerum ipsa, qui ex quo rem eligendi magnam. Suscipit omnis rem, debitis beatae nihil perspiciatis magnam deleniti quis repudiandae, fugit mollitia eaque earum. Error, vitae voluptatibus illum blanditiis ipsum in culpa officia, repellat maiores dignissimos libero laudantium aperiam nesciunt eveniet cum recusandae quod officiis tenetur! Harum, saepe? Dolores nesciunt unde sit at dignissimos, saepe earum ut accusamus adipisci iusto hic sunt voluptatum reprehenderit doloribus delectus sint nihil quae sequi eos? Labore repellat facere accusantium veniam pariatur ex obcaecati distinctio, debitis aliquid dolore quo, eaque libero, itaque reprehenderit tempora commodi illo corporis voluptas tempore odio assumenda voluptatem cupiditate laboriosam. Distinctio minima, hic, reprehenderit ad repellat ea cumque doloribus illo mollitia vel fuga libero eos unde porro. Dolorum enim, ipsa dolore a at quasi expedita eveniet sapiente quos, autem vel quis. Aperiam voluptatem molestias ullam aspernatur minima quis consequatur amet modi saepe a dicta quod perferendis atque dolorem libero quia laborum, repellat repellendus. Saepe modi quod accusamus provident rem!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim expedita in, veritatis quasi minima aspernatur eveniet culpa cupiditate asperiores amet quae dignissimos tempora, illo quas excepturi harum, reprehenderit necessitatibus nisi?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit enim cupiditate, quasi voluptates soluta aspernatur ullam placeat obcaecati adipisci distinctio iste? Iusto enim sed veniam iure quaerat odit magni fuga.</p>
+        </article>
+    </main>
+    <script>
+        function mudouTamanho(){
+            if(window.innerWidth >= 768){
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none';
+            }
+        }
+        function clickMenu(){
+            if(itens.style.display == 'block')
+                itens.style.display = 'none';
+            else itens.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
